@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Playlist Master View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="PlaylistMasterViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -19,31 +19,29 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YdL-Kp-XkQ">
                                 <rect key="frame" x="137" y="269" width="46" height="30"/>
                                 <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonPressed" destination="vXZ-lx-hvc" eventType="touchUpInside" id="c4D-Ee-SY4"/>
+                                    <segue destination="igd-bU-HJo" kind="modal" id="wHy-nM-87f"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="YdL-Kp-XkQ" secondAttribute="centerY" id="mDP-eb-51J"/>
                             <constraint firstAttribute="centerX" secondItem="YdL-Kp-XkQ" secondAttribute="centerX" id="xsW-Fg-ccL"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="aButton" destination="YdL-Kp-XkQ" id="QeO-0m-vPI"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="128" y="337"/>
+            <point key="canvasLocation" x="-177" y="337"/>
         </scene>
-        <!--View Controller-->
+        <!--Playlist Detail View Controller-->
         <scene sceneID="eAp-lB-t28">
             <objects>
-                <viewController id="igd-bU-HJo" sceneMemberID="viewController">
+                <viewController id="igd-bU-HJo" customClass="PlaylistDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="liw-UP-sAv"/>
                         <viewControllerLayoutGuide type="bottom" id="0s1-Hb-Frw"/>
@@ -51,7 +49,7 @@
                     <view key="view" contentMode="scaleToFill" id="DKB-kI-wZu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.88007567452201751" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bml-mL-j7b" userLabel="First Responder" sceneMemberID="firstResponder"/>

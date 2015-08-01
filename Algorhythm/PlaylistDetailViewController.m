@@ -1,30 +1,29 @@
 //
-//  ViewController.m
+//  PlaylistDetailViewController.m
 //  Algorhythm
 //
 //  Created by Joshua Motley on 7/31/15.
 //  Copyright (c) 2015 TeamTreeHouse. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "PlaylistDetailViewController.h"
 
-@interface ViewController ()
+@interface PlaylistDetailViewController ()
 
 @end
 
-@implementation ViewController
+@implementation PlaylistDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.aButton setTitle:@"Press me!" forState:UIControlStateNormal];
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)buttonPressed {
-    self.view.backgroundColor = [UIColor orangeColor];
-}
+
+
 
 @end

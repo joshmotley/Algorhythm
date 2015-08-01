@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PlaylistDetailViewController.h
 //  Algorhythm
 //
 //  Created by Joshua Motley on 7/31/15.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIButton *aButton;
-
+@interface PlaylistDetailViewController : UIViewController
 
 @end
-

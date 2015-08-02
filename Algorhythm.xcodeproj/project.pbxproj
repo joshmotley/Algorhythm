@@ -15,6 +15,7 @@
 		26527EB11B6C3DA600312AC1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26527EAF1B6C3DA600312AC1 /* LaunchScreen.xib */; };
 		26527EBD1B6C3DA600312AC1 /* AlgorhythmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26527EBC1B6C3DA600312AC1 /* AlgorhythmTests.m */; };
 		26527ECB1B6C4A2600312AC1 /* PlaylistDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26527ECA1B6C4A2600312AC1 /* PlaylistDetailViewController.m */; };
+		26527ECE1B6DB43300312AC1 /* MusicLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 26527ECD1B6DB43300312AC1 /* MusicLibrary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		26527EBC1B6C3DA600312AC1 /* AlgorhythmTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlgorhythmTests.m; sourceTree = "<group>"; };
 		26527EC91B6C4A2600312AC1 /* PlaylistDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistDetailViewController.h; sourceTree = "<group>"; };
 		26527ECA1B6C4A2600312AC1 /* PlaylistDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaylistDetailViewController.m; sourceTree = "<group>"; };
+		26527ECC1B6DB43200312AC1 /* MusicLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicLibrary.h; sourceTree = "<group>"; };
+		26527ECD1B6DB43300312AC1 /* MusicLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicLibrary.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				26527EA81B6C3DA500312AC1 /* PlaylistMasterViewController.m */,
 				26527EC91B6C4A2600312AC1 /* PlaylistDetailViewController.h */,
 				26527ECA1B6C4A2600312AC1 /* PlaylistDetailViewController.m */,
+				26527ECC1B6DB43200312AC1 /* MusicLibrary.h */,
+				26527ECD1B6DB43300312AC1 /* MusicLibrary.m */,
 				26527EAA1B6C3DA500312AC1 /* Main.storyboard */,
 				26527EAD1B6C3DA600312AC1 /* Images.xcassets */,
 				26527EAF1B6C3DA600312AC1 /* LaunchScreen.xib */,
@@ -228,6 +233,7 @@
 				26527EA61B6C3DA500312AC1 /* AppDelegate.m in Sources */,
 				26527ECB1B6C4A2600312AC1 /* PlaylistDetailViewController.m in Sources */,
 				26527EA31B6C3DA500312AC1 /* main.m in Sources */,
+				26527ECE1B6DB43300312AC1 /* MusicLibrary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

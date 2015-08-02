@@ -33,7 +33,8 @@
 {
     if ([segue.identifier isEqual:@"showPlaylistDetail"]) {
         PlaylistDetailViewController *playlistViewController = (PlaylistDetailViewController *)segue.destinationViewController;
-        playlistViewController.segueLabelText = @"information passed between views";
+        playlistViewController.playlist = [[Playlist alloc]initWithIndex:0];
+       
     }
 }
 

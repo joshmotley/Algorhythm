@@ -23,7 +23,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="igd-bU-HJo" kind="push" id="wzz-n1-KoN"/>
+                                    <segue destination="nig-FW-NXm" kind="push" identifier="showPlaylistDetail" id="biE-Pw-C2l"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -37,26 +37,41 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="355" y="337"/>
+            <point key="canvasLocation" x="387" y="285"/>
         </scene>
-        <!--Artists-->
-        <scene sceneID="eAp-lB-t28">
+        <!--PlaylistDetailViewController-->
+        <scene sceneID="QQd-X4-Kgl">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Bml-mL-j7b" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="igd-bU-HJo" customClass="PlaylistDetailViewController" sceneMemberID="viewController">
+                <viewController title="PlaylistDetailViewController" id="nig-FW-NXm" customClass="PlaylistDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="liw-UP-sAv"/>
-                        <viewControllerLayoutGuide type="bottom" id="0s1-Hb-Frw"/>
+                        <viewControllerLayoutGuide type="top" id="i6v-GH-ZRY"/>
+                        <viewControllerLayoutGuide type="bottom" id="eeQ-pC-7D7"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="DKB-kI-wZu">
+                    <view key="view" contentMode="scaleToFill" id="zn2-jv-oga">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.88007567452201751" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You didn't press the button!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQ2-rr-JIj">
+                                <rect key="frame" x="54" y="273" width="212" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="jQ2-rr-JIj" secondAttribute="centerX" id="N1r-7Y-N1T"/>
+                            <constraint firstAttribute="centerY" secondItem="jQ2-rr-JIj" secondAttribute="centerY" id="kA5-Fz-bMl"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Artists" id="rdh-VN-HC9"/>
+                    <navigationItem key="navigationItem" title="Artists" id="R3e-pi-IVl"/>
+                    <connections>
+                        <outlet property="buttonPressLabel" destination="jQ2-rr-JIj" id="Ed8-su-iU0"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cb3-fG-eAU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="912" y="337"/>
+            <point key="canvasLocation" x="829" y="278"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NpY-H2-EPi">

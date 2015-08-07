@@ -188,23 +188,35 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Number 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l57-qq-XJz">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Number 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l57-qq-XJz">
                                 <rect key="frame" x="20" y="407" width="96" height="17"/>
+                                <gestureRecognizers/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="XrT-5N-8iA" appends="YES" id="Fjd-pd-ajw"/>
+                                </connections>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Number 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FgH-jq-gtM">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Number 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FgH-jq-gtM">
                                 <rect key="frame" x="20" y="432" width="96" height="17"/>
+                                <gestureRecognizers/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="nML-5x-IXD" appends="YES" id="ArD-UR-TXq"/>
+                                </connections>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Number 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JoU-43-31W">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Number 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JoU-43-31W">
                                 <rect key="frame" x="20" y="457" width="96" height="17"/>
+                                <gestureRecognizers/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="xwo-gd-nvx" appends="YES" id="RVh-6F-YiB"/>
+                                </connections>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -234,11 +246,48 @@
                         <outlet property="playlistCoverImage" destination="q8O-8X-S0M" id="bJr-jY-gmu"/>
                         <outlet property="playlistDescription" destination="44l-Gy-OQi" id="olc-hg-wKN"/>
                         <outlet property="playlistTitle" destination="Tlr-QO-JWU" id="oTJ-mR-q43"/>
+                        <outletCollection property="playlistLabels" destination="l57-qq-XJz" id="heU-Kd-RrA"/>
+                        <outletCollection property="playlistLabels" destination="FgH-jq-gtM" id="gir-X3-Ioq"/>
+                        <outletCollection property="playlistLabels" destination="JoU-43-31W" id="pll-Om-LjK"/>
+                        <segue destination="5OJ-qw-ftU" kind="push" identifier="showWebView" id="en3-5y-NJF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cb3-fG-eAU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="XrT-5N-8iA">
+                    <connections>
+                        <action selector="showWebView:" destination="nig-FW-NXm" id="8K0-Pk-7ee"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="nML-5x-IXD">
+                    <connections>
+                        <action selector="showWebView:" destination="nig-FW-NXm" id="ncP-gH-w5J"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="xwo-gd-nvx">
+                    <connections>
+                        <action selector="showWebView:" destination="nig-FW-NXm" id="gTk-o9-gOu"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="829" y="278"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="3al-Hf-vrc">
+            <objects>
+                <viewController id="5OJ-qw-ftU" customClass="WebViewController" sceneMemberID="viewController">
+                    <webView key="view" contentMode="scaleToFill" id="aKi-4M-bOG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </webView>
+                    <navigationItem key="navigationItem" id="0t0-qe-Xaw"/>
+                    <connections>
+                        <outlet property="webView" destination="aKi-4M-bOG" id="GOd-Gs-Z9e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zUM-Ir-xpw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1285" y="278"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NpY-H2-EPi">

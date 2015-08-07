@@ -26,7 +26,7 @@ NSString *const kArtists = @"artists";
                        kIcon: @"coffee.pdf",
                        kLargeIcon: @"coffee_large.pdf",
                        kBackgroundColor: @{@"red": @255.0, @"green": @204.0, @"blue": @51.0, @"alpha": @1.0},
-                       kArtists: @[@"American Authors", @"Vacationer", @"Matt and Kim", @"MGMT", @"Echosmith", @"Tokyo Police Club", @"La Femme"]
+                       kArtists: @[@"Miley Cyrus", @"Vacationer", @"Matt and Kim", @"MGMT", @"Echosmith", @"American Authors", @"La Femme"]
                        },
                      @{kTitle: @"Runner's Rampage",
                        kDescription: @"Hit the track hard and get in beast mode with everything from dance tracks to classic hip hop. All the right fuel to motivate you to push your limits.",

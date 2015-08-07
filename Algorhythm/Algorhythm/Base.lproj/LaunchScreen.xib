@@ -10,11 +10,11 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Oc-E8-6NZ">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Oc-E8-6NZ">
                     <rect key="frame" x="0.0" y="0.0" width="480" height="240"/>
                     <color key="backgroundColor" red="0.20392156862745098" green="0.22352941176470589" blue="0.25882352941176473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
-                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hlZ-Zh-uch">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hlZ-Zh-uch">
                     <rect key="frame" x="0.0" y="240" width="480" height="240"/>
                     <color key="backgroundColor" red="0.12549019607843137" green="0.14117647058823529" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
@@ -29,6 +29,7 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="hlZ-Zh-uch" secondAttribute="trailing" id="24V-Eh-e4h"/>
+                <constraint firstItem="hlZ-Zh-uch" firstAttribute="height" secondItem="2Oc-E8-6NZ" secondAttribute="height" id="4le-bJ-wUk"/>
                 <constraint firstAttribute="trailing" secondItem="2Oc-E8-6NZ" secondAttribute="trailing" id="6wa-gu-cmr"/>
                 <constraint firstAttribute="centerY" secondItem="2L2-Gk-3Jv" secondAttribute="centerY" id="HO3-8y-zET"/>
                 <constraint firstItem="hlZ-Zh-uch" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="N94-f1-UuG"/>
@@ -36,6 +37,7 @@
                 <constraint firstItem="hlZ-Zh-uch" firstAttribute="top" secondItem="2Oc-E8-6NZ" secondAttribute="bottom" id="ajn-J3-2JU"/>
                 <constraint firstItem="2Oc-E8-6NZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hiQ-wK-zHY"/>
                 <constraint firstAttribute="bottom" secondItem="hlZ-Zh-uch" secondAttribute="bottom" id="peh-qk-Ck0"/>
+                <constraint firstItem="hlZ-Zh-uch" firstAttribute="width" secondItem="2Oc-E8-6NZ" secondAttribute="width" id="uIY-nF-yIb"/>
                 <constraint firstAttribute="centerX" secondItem="2L2-Gk-3Jv" secondAttribute="centerX" id="yhW-bv-4wF"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>

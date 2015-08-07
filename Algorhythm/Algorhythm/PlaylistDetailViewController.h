@@ -12,6 +12,7 @@
 
 @interface PlaylistDetailViewController : UIViewController
 
+@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *playlistLabels;
 @property (strong, nonatomic) Playlist *playlist;
 
 @property (weak, nonatomic) IBOutlet UIImageView *playlistCoverImage;
